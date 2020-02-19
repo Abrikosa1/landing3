@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>W&B</title>
+    <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -24,16 +25,42 @@
                     </ul>
                 </nav>
                 <!-- /.navbar -->
-                <div class="header-info">
-                    <h1 class="header-title">We build it with passion</h1>
-                    <p class="header-text">Just to be clear, we do this for fun not for you, just kidding.</p>
-                    <a href="#" class="header-btn">READ MORE</a>
-                </div>
-                <!-- /.header-info -->
             </div>
             <!-- /.header -->
         </div>
         <!-- /.container -->
+        <div class="swiper-container" id="header-slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="header-info">
+                        <h1 class="header-title">We build it with passion</h1>
+                        <p class="header-text">Just to be clear, we do this for fun not for you, just kidding.</p>
+                        <a href="#" class="header-btn">READ MORE</a>
+                    </div>
+                </div>
+                <!-- Slide-end -->
+                <div class="swiper-slide">
+                    <div class="header-info">
+                        <h1 class="header-title">We build it with passion</h1>
+                        <p class="header-text">Just to be clear, we do this for fun not for you, just kidding.</p>
+                        <a href="#" class="header-btn">READ MORE</a>
+                    </div>
+                </div>
+                <!-- Slide-end -->
+                <div class="swiper-slide">
+                    <div class="header-info">
+                        <h1 class="header-title">We build it with passion</h1>
+                        <p class="header-text">Just to be clear, we do this for fun not for you, just kidding.</p>
+                        <a href="#" class="header-btn">READ MORE</a>
+                    </div>
+                </div>
+                <!-- Slide-end -->
+            </div>
+            <!-- If we need pagination -->
+            <div class="header-slider-pagination"></div>
+        </div>
     </header>
     
     <main>
@@ -72,11 +99,111 @@
 
         <section class="team">
             <div class="big-container">
-                
+                <h2 class="title team-title">This is our team</h2>
+                <p class="subtitle team-subtitle">We are small but effective and...</p>
+                <div class="team-members-block">
+                    <div class="team-member">
+                        <div class="team-member-photo">
+                            <!-- <img src="img/team.webp" alt="Photo"> -->
+                        </div>
+                        <h3 class="team-member-name">Denis Ivanov</h3>
+                        <p class="team-member-profession">Designer & Front-End Developer</p>
+                        <div class="team-member-socials">
+                            <a href="#" class="social-link"><img src="img/social/twitter.png" alt="twitter"></a>
+                            <a href="#" class="social-link"><img src="img/social/instagram.png" alt="instagram"></a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="team-member-photo">
+                            <!-- <img src="img/team.webp" alt="Photo"> -->
+                        </div>
+                        <h3 class="team-member-name">Anton Yurkov</h3>
+                        <p class="team-member-profession">CEO & Founder</p>
+                        <div class="team-member-socials">
+                            <a href="#" class="social-link"><img src="img/social/twitter.png" alt="twitter"></a>
+                            <a href="#" class="social-link"><img src="img/social/instagram.png" alt="instagram"></a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="team-member-photo">
+                            <!-- <img src="img/team.webp" alt="Photo"> -->
+                        </div>
+                        <h3 class="team-member-name">Eugene Fyalkovski</h3>
+                        <p class="team-member-profession">Someone & Somewhere</p>
+                        <div class="team-member-socials">
+                            <a href="#" class="social-link"><img src="img/social/twitter.png" alt="twitter"></a>
+                            <a href="#" class="social-link"><img src="img/social/instagram.png" alt="instagram"></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.team-block -->
             </div>
             <!-- /.big-container -->
         </section>
         <!-- /.team -->
+
+        <section class="about-us">
+            <div class="big-container">
+                <h2 class="title about-us-title">We provide you everything</h2>
+                <p class="subtitle about-us-subtitle">Maybe not everything, but we provide you some stuff.</p>
+                <div class="services">
+                    <div class="service">
+                        <div class="service-img graph"><!-- <img src="img/services/LINE_GRAPH.png" alt="Graph"> --></div>
+                        <h3 class="service-title">Some Analytics</h3>
+                        <p class="service-subtitle">Aenean nisi lectus, convallis non lorem sit amet, rhoncus malesuada justo</p>
+                    </div>
+                    <div class="service">
+                        <div class="service-img heart"><!-- <img src="img/services/HEART.png" alt="Heart"> --></div>
+                        <h3 class="service-title">We provide you love</h3>
+                        <p class="service-subtitle">Aenean nisi lectus, convallis non lorem sit amet, rhoncus malesuada justo</p>
+                    </div>
+                    <div class="service">
+                        <div class="service-img cloud"><!-- <img src="img/services/_UPLOAD.png" alt="cloud"> --></div>
+                        <h3 class="service-title">And Some Cloud</h3>
+                        <p class="service-subtitle">Aenean nisi lectus, convallis non lorem sit amet, rhoncus malesuada justo</p>
+                    </div>
+                </div>
+                <a href="#" class="services-btn">VISIT OUR BLOG</a>
+            </div>
+            <!-- /.big-container -->
+        </section>
+        <!-- /.about-us -->
     </main>
+
+    <footer>
+        <section class="contact-us">
+            <div class="small-container">
+                <h2 class="title">Contact Us</h2>
+                <p class="subtitle">We know what we need to do</p>
+                <div class="contacts">
+                    <div class="contacts-item">
+                        <img src="img/contacts/Phone.png" alt="Phone" class="phone-icon">
+                        <a href="tel:555-222-333" class="contacts-link">555-222-333</a>
+                    </div>
+                    <div class="contacts-item">
+                        <img src="img/contacts/PIN_2.png" alt="Address" class="address-icon">
+                        <a href="#" class="contacts-link">Here is some address</a>
+                    </div>
+                    <div class="contacts-item">
+                        <img src="img/contacts/MAIL.png" alt="Email" class="mail-icon">
+                        <a href="mailto:somemail@hotmail.com" class="contacts-link">somemail@hotmail.com</a>
+                    </div>
+                </div>
+            </div>
+            <!-- /.small-container -->
+            <form action="" method="POST" class="contact-form">
+                <input type="text" class="contact-input" placeholder="Full Name">
+                <input type="email" class="contact-input" placeholder="Email">
+                <input type="phone" class="contact-input" placeholder="Number">
+                <input type="text" class="contact-input contact-message" placeholder="Write your Message here...">
+                <button type="submit" class="contact-form-btn">Submit</button>
+            </form>
+            <!-- /.contact-form -->
+        </section>
+        <!-- /.contact-us -->
+        <h4 class="copyrigt">Copyright © Kenan Hamidic. All rights reserved.</h4>
+    </footer>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
