@@ -1,5 +1,7 @@
 'use strict';
-var mySwiper = new Swiper('#header-slider', {
+new WOW().init();
+
+const mySwiper = new Swiper('#header-slider', {
     spaceBetween: 30,
     loop: true,
     pagination: {
@@ -10,9 +12,47 @@ var mySwiper = new Swiper('#header-slider', {
       },
 });
 
-var menuButton = document.querySelector('.menu-button');
-var menu = document.querySelector('.navbar');
-menuButton.addEventListener('click', function(){
+const menuButton = document.querySelector('.menu-button'),
+      menu = document.querySelector('.navbar'),
+      imgWrapper = document.querySelectorAll('.img-wrapper'),
+      contactForm = document.querySelector('.contact-form');
+
+
+      
+
+const formSubmit = event => {
+  event.preventDefault();
+    
+/*   const data = new FormData(event.target);
+  
+  fetch('server.php', {
+      method: 'POST',
+      header: {
+          'Content-Type': 'multipart/form-data'
+      },
+      body: data,
+  }); */
+};
+    
+
+
+imgWrapper.forEach(element => {
+  element.addEventListener('mouseover', () => {
+    element.querySelector('img').style.transform = "scale(-1, 1)"; 
+  });
+});
+
+
+imgWrapper.forEach(element => {
+  element.addEventListener('mouseout', () => {
+    element.querySelector('img').style.transform = "scale(1, 1)"; 
+  });
+});
+
+menuButton.addEventListener('click', () => {
   menuButton.classList.toggle('menu-button-active');
   menu.classList.toggle('navbar-active');
 });
+
+
+contactForm.addEventListener('submit', formSubmit);
