@@ -1,21 +1,18 @@
 'use strict';
-const fileinclude = require('gulp-file-include'),
+const fileInclude = require('gulp-file-include'),
       gulp = require('gulp'),
       cleanCSS = require('gulp-clean-css'),
       webp = require('gulp-webp'),
-      replace = require('gulp-replace'),
-      gs = require('glob-stream');
+      replace = require('gulp-replace');
 
-gulp.task('fileinclude', function(cb) {
-  gulp.src(['app/index.html'])
-    .pipe(fileinclude({
+gulp.task('fileInclude',() => {
+  return gulp.src(['app/pages/Single.html'])
+    .pipe(fileInclude({
       prefix: '@@',
       basepath: '@file'
     }))
-    .pipe(gulp.dest('app/compiled/'));
-    cb();
+    .pipe(gulp.dest('app/compiled/pages/'));
 });
-
 
 gulp.task('webp', () =>
     gulp.src(['app/img/*.+(jpg|png)',
@@ -34,11 +31,17 @@ gulp.task('minCSS', () => {
 });
 
 
-gulp.task('replaceHTML', () => {
+gulp.task('repIndex.html', () => {
   return gulp.src('app/index.html')
     .pipe(replace(/png|jpg/g, 'webp'))
     .pipe(gulp.dest('app/compiled/')); 
 });
+gulp.task('repSingle.html', () => {
+  return gulp.src('app/compiled/pages/Single.html')
+    .pipe(replace(/png|jpg/g, 'webp'))
+    .pipe(gulp.dest('app/compiled/pages/')); 
+});
+
 
 gulp.task('replaceCSS', () => {
   return gulp.src('app/compiled/css/style.css')
@@ -52,7 +55,7 @@ gulp.task('replaceJS', () => {
 });
 
 gulp.task('moveAsIs', () => {
-  return gulp.src(['**', '!app/compiled/**', '!package-lock.json'], {base: '.'})
+  return gulp.src(['**', '!app/compiled/**', '!node_modules/**', '!package-lock.json'], {base: '.'})
     .pipe(gulp.dest('app/compiled/filesAsIs')); 
 });
 

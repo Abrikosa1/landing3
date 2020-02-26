@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>W&B</title>
     <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -12,7 +13,7 @@
         <a name="home"></a>
         <div class="small-container">
             <div class="header">
-                <nav class="navbar">
+                <nav class="navbar animated fadeInDown">
                     <ul>
                         <li><a href="#home" class="active">Home</a></li>
                         <li><a href="#about-us">About Us</a></li>
@@ -35,11 +36,11 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
-                <div class="swiper-slide">
+                <div class="swiper-slide animated fadeIn">
                     <div class="header-info">
                         <h1 class="header-title">Professional Approach</h1>
                         <p class="header-text">Just to be clear, we do this for fun not for you, just kidding.</p>
-                        <a href="#" class="header-btn">READ MORE</a>
+                        <a href="pages/Single.html" class="header-btn">READ MORE</a>
                     </div>
                 </div>
                 <!-- Slide-end -->
@@ -47,7 +48,7 @@
                     <div class="header-info">
                         <h1 class="header-title">We know what we do</h1>
                         <p class="header-text">Just to be clear, we do this for fun not for you, just kidding.</p>
-                        <a href="#" class="header-btn">READ MORE</a>
+                        <a href="pages/Single.html" class="header-btn">READ MORE</a>
                     </div>
                 </div>
                 <!-- Slide-end -->
@@ -55,7 +56,7 @@
                     <div class="header-info">
                         <h1 class="header-title">We build it with passion</h1>
                         <p class="header-text">Just to be clear, we do this for fun not for you, just kidding.</p>
-                        <a href="#" class="header-btn">READ MORE</a>
+                        <a href="pages/Single.html" class="header-btn">READ MORE</a>
                     </div>
                 </div>
                 <!-- Slide-end -->
@@ -72,25 +73,25 @@
                 <a name="about-us"></a>
                 <div class="year-results-block">
                     <div class="vertical-circles">
-                        <div class="vertical-circle first-circle"></div>
-                        <div class="vertical-circle second-circle"></div>
-                        <div class="vertical-circle third-circle"></div>
-                        <div class="vertical-circle fourth-circle"></div>
+                        <div class="vertical-circle first-circle wow zoomIn" data-wow-delay="0.4s"></div>
+                        <div class="vertical-circle second-circle first-circle wow zoomIn" data-wow-delay="0.6s"></div>
+                        <div class="vertical-circle third-circle first-circle wow zoomIn" data-wow-delay="0.8s"></div>
+                        <div class="vertical-circle fourth-circle first-circle wow zoomIn" data-wow-delay="1s"></div>
                     </div>
-                    <div class="year-results first-circle">
+                    <div class="year-results first-circle wow fadeInDown" data-wow-delay="0.2s">
                         <h2 class="year-title align-right">2017</h2>
                         <p class="year-results-text">Lorem ipsum dolor sit amet, consectetur adipiselit. Vivamus varius nec diam vitae hendrerit bigus mit.</p>
                     </div>
-                    <div class="year-results align-right second-circle">
+                    <div class="year-results align-right second-circle wow fadeInDown" data-wow-delay="0.3s">
                         <h2 class="year-title">2018</h2>
                         <p class="year-results-text">Lorem ipsum dolor sit amet, consectetur adipiselit. Vivamus varius nec diam vitae hendrerit bigus mit.
                             Begitus vit urna nulla.</p>
                     </div>
-                    <div class="year-results third-circle">
+                    <div class="year-results third-circle wow fadeInDown" data-wow-delay="0.4s">
                         <h2 class="year-title align-right">2019</h2>
                         <p class="year-results-text">Sed at auctor sem, nec tincidunt elit. Pellentesque enim turpis, porttitor ac orci in, ultrices efficitur nisl. Ut odio libero, sodales a tellus eleifend, suscipit dapibus mi..</p>
                     </div>
-                    <div class="year-results align-right fourth-circle">
+                    <div class="year-results align-right fourth-circle wow fadeInDown" data-wow-delay="0.5s">
                         <h2 class="year-title">2020</h2>
                         <p class="year-results-text">Lorem ipsum dolor sit amet, consectetur adipiselit. Vivamus varius nec diam vitae hendrerit bigus mit.
                             Begitus vit urna nulla.</p>
@@ -104,12 +105,12 @@
         <section class="team">
             <div class="big-container">          
                 <a name="team"></a>
-                <h2 class="title team-title">This is our team</h2>
-                <p class="subtitle team-subtitle">We are small but effective and...</p>
+                <h2 class="title team-title wow fadeInDown" data-wow-delay="0.2s">This is our team</h2>
+                <p class="subtitle team-subtitle wow fadeInDown" data-wow-delay="0.4s">We are small but effective and...</p>
                 <div class="team-members-block">
-                    <div class="team-member">
-                        <div class="team-member-photo">
-                            <!-- <img src="img/team.webp" alt="Photo"> -->
+                    <div class="team-member wow bounceIn" data-wow-delay="0.6s">
+                        <div class="img-wrapper">
+                            <img src="img/team.webp" alt="" class="team-member-photo">
                         </div>
                         <h3 class="team-member-name">Denis Ivanov</h3>
                         <p class="team-member-profession">Designer & Front-End Developer</p>
@@ -118,9 +119,10 @@
                             <a href="#" class="social-link"><img src="img/social/instagram.png" alt="instagram"></a>
                         </div>
                     </div>
-                    <div class="team-member">
-                        <div class="team-member-photo">
-                            <!-- <img src="img/team.webp" alt="Photo"> -->
+                    <div class="team-member wow bounceIn" data-wow-delay="0.8s">
+                        <div class="img-wrapper">
+                            <!-- <div class="team-member-photo"></div> -->
+                            <img src="img/team.webp" alt="" class="team-member-photo">
                         </div>
                         <h3 class="team-member-name">Anton Yurkov</h3>
                         <p class="team-member-profession">CEO & Founder</p>
@@ -129,9 +131,9 @@
                             <a href="#" class="social-link"><img src="img/social/instagram.png" alt="instagram"></a>
                         </div>
                     </div>
-                    <div class="team-member">
-                        <div class="team-member-photo">
-                            <!-- <img src="img/team.webp" alt="Photo"> -->
+                    <div class="team-member wow bounceIn" data-wow-delay="1s">
+                        <div class="img-wrapper">
+                            <img src="img/team.webp" alt="" class="team-member-photo">
                         </div>
                         <h3 class="team-member-name">Eugene Fyalkovski</h3>
                         <p class="team-member-profession">Someone & Somewhere</p>
@@ -150,26 +152,26 @@
         <section class="about-us">
             <div class="big-container">      
             <a name="services"></a>
-                <h2 class="title about-us-title">We provide you everything</h2>
-                <p class="subtitle about-us-subtitle">Maybe not everything, but we provide you some stuff.</p>
+                <h2 class="title about-us-title wow fadeInDown" data-wow-delay="0.2s">We provide you everything</h2>
+                <p class="subtitle about-us-subtitle wow fadeInDown" data-wow-delay="0.4s">Maybe not everything, but we provide you some stuff.</p>
                 <div class="services">
-                    <div class="service">
+                    <div class="service wow fadeIn" data-wow-delay="0.6s">
                         <div class="service-img graph"><!-- <img src="img/services/LINE_GRAPH.png" alt="Graph"> --></div>
                         <h3 class="service-title">Some Analytics</h3>
                         <p class="service-subtitle">Aenean nisi lectus, convallis non lorem sit amet, rhoncus malesuada justo</p>
                     </div>
-                    <div class="service">
+                    <div class="service wow fadeIn" data-wow-delay="0.7s">
                         <div class="service-img heart"><!-- <img src="img/services/HEART.png" alt="Heart"> --></div>
                         <h3 class="service-title">We provide you love</h3>
                         <p class="service-subtitle">Aenean nisi lectus, convallis non lorem sit amet, rhoncus malesuada justo</p>
                     </div>
-                    <div class="service">
+                    <div class="service wow fadeIn" data-wow-delay="0.8s">
                         <div class="service-img cloud"><!-- <img src="img/services/_UPLOAD.png" alt="cloud"> --></div>
                         <h3 class="service-title">And Some Cloud</h3>
                         <p class="service-subtitle">Aenean nisi lectus, convallis non lorem sit amet, rhoncus malesuada justo</p>
                     </div>
                 </div>
-                <a href="#" class="services-btn">VISIT OUR BLOG</a>
+                <a href="pages/Single.html" class="services-btn wow fadeIn" data-wow-delay="0.3s">VISIT OUR BLOG</a>
             </div>
             <!-- /.big-container -->
         </section>
@@ -180,18 +182,18 @@
         <section class="contact-us">
             <div class="small-container">
                 <a name="contact-us"></a>
-                <h2 class="title">Contact Us</h2>
-                <p class="subtitle">We know what we need to do</p>
+                <h2 class="title wow fadeInDown" data-wow-delay="0.2s">Contact Us</h2>
+                <p class="subtitle wow fadeInDown" data-wow-delay="0.4s">We know what we need to do</p>
                 <div class="contacts">
-                    <div class="contacts-item">
+                    <div class="contacts-item wow fadeIn" data-wow-delay="0.6s">
                         <img src="img/contacts/Phone.png" alt="Phone" class="phone-icon">
                         <a href="tel:555-222-333" class="contacts-link">555-222-333</a>
                     </div>
-                    <div class="contacts-item">
+                    <div class="contacts-item wow fadeIn" data-wow-delay="0.7s">
                         <img src="img/contacts/PIN_2.png" alt="Address" class="address-icon">
                         <a href="#" class="contacts-link">Here is some address</a>
                     </div>
-                    <div class="contacts-item">
+                    <div class="contacts-item wow fadeIn" data-wow-delay="0.8s">
                         <img src="img/contacts/MAIL.png" alt="Email" class="mail-icon">
                         <a href="mailto:somemail@hotmail.com" class="contacts-link">somemail@hotmail.com</a>
                     </div>
@@ -199,17 +201,18 @@
             </div>
             <!-- /.small-container -->
             <form action="" method="POST" class="contact-form">
-                <input type="text" class="contact-input" placeholder="Full Name">
-                <input type="email" class="contact-input" placeholder="Email">
-                <input type="tel" class="contact-input" placeholder="Number">
-                <input type="text" class="contact-input contact-message" placeholder="Write your Message here...">
-                <button type="submit" class="contact-form-btn">Submit</button>
+                <input type="text" class="contact-input wow fadeIn" data-wow-delay="0.2s" placeholder="Full Name">
+                <input type="email" class="contact-input wow fadeIn" data-wow-delay="0.3s" placeholder="Email">
+                <input type="tel" class="contact-input wow fadeIn" data-wow-delay="0.4s" placeholder="Number">
+                <input type="text" class="contact-input contact-message wow fadeIn" data-wow-delay="0.5s" placeholder="Write your Message here...">
+                <button type="submit" class="contact-form-btn wow zoomIn" data-wow-delay="0.7s">Submit</button>
             </form>
             <!-- /.contact-form -->
         </section>
         <!-- /.contact-us -->
-        <h4 class="copyrigt">Copyright © Kenan Hamidic. All rights reserved.</h4>
+        <h4 class="copyrigt wow fadeIn" data-wow-delay="0.7s">Copyright © Kenan Hamidic. All rights reserved.</h4>
     </footer>
+    <script src="js/wow.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/main.js"></script>
 </body>
