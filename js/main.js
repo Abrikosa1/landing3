@@ -13,9 +13,9 @@ const mySwiper = new Swiper('#header-slider', {
 });
 
 const menuButton = document.querySelector('.menu-button'),
-      menu = document.querySelector('.navbar'),
       imgWrapper = document.querySelectorAll('.img-wrapper'),
-      contactForm = document.querySelector('.contact-form');
+      contactForm = document.querySelector('.contact-form'),
+      navbar = document.querySelector('.navbar');
 
 
       
@@ -51,7 +51,7 @@ imgWrapper.forEach(element => {
 
 menuButton.addEventListener('click', () => {
   menuButton.classList.toggle('menu-button-active');
-  menu.classList.toggle('navbar-active');
+  navbar.classList.toggle('navbar-active');
 });
 
 

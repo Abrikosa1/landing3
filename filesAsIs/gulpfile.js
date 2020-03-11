@@ -59,3 +59,10 @@ gulp.task('moveAsIs', () => {
     .pipe(gulp.dest('app/compiled/filesAsIs')); 
 });
 
+gulp.task('default', gulp.series('fileInclude', 
+                                 'minCSS', 
+                                 'repIndex.html', 
+                                 'repSingle.html', 
+                                 'replaceCSS', 
+                                 'replaceJS', 
+                                 'moveAsIs'));
